@@ -72,8 +72,14 @@ class CommandSignsCommand implements CommandExecutor {
 					plugin.playerText.remove(playerName);
 					player.sendMessage("CommandSign text and status cleared.");
 				}
+			} else if(args[0].equalsIgnoreCase("help")) {
+				player.sendMessage("/commandsigns line<number> - Add a line to your CommandSign clipboard. Right click a sign to activate.");
+				player.sendMessage("/commandsigns read - Right click a sign to read the CommandSign text.");
+				player.sendMessage("/commandsigns copy - Copy a CommandSigns to your clipboard.");
+				player.sendMessage("/commandsigns remove - Right click a sign to remove a CommandSign.");
+				player.sendMessage("/commandsigns clear - Clear your CommandSign clipboard.");
 			} else {
-				player.sendMessage("Wrong CommandSigns command syntax.");
+				player.sendMessage("§cWrong CommandSigns command syntax.");
 			}
 			return true;
 		}

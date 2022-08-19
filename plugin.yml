@@ -2,11 +2,8 @@ name: CommandSigns
 main: org.zonedabone.commandsigns.CommandSigns
 authors: [HansAnderson, zonedabone]
 version: 1.3.0
-description: >
-             Add commands to signs.
 commands:
   commandsigns:
-    aliases:
     description: CommandSigns commands.
     usage: |
         /commandsigns line<number> - Add a line to your CommandSign clipboard. Right click a sign to activate.
@@ -35,19 +32,16 @@ permissions:
             commandsigns.use.super: true
     commandsigns.create.regular:
         description: Allows you to create a regular CommandSign
-        default: false
+        default: op
     commandsigns.create.super:
         description: Allows you to create a super CommandSign
-        default: false
+        default: op
     commandsigns.remove:
         description: Allows you to remove a CommandSign
-        default: false
-    commandsigns.use.regular:
-        description: Allows you to use a regular CommandSign
-        default: false
+        default: op
     commandsigns.use.super:
         description: Allows you to use a super CommandSign
-        default: false
+        default: op
     commandsigns.group.*:
         description: Allows you to use all group commands
-        default: false
+        default: op
